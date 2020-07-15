@@ -221,7 +221,7 @@ public class tampilan extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         File file = fileChooser.getSelectedFile();
-        File processedfile = new File ("C:\\Users\\Public\\Documents\\FileEnkrip.txt");
+        File processedfile = new File ("C:\\Users\\Public\\Documents\\plaintext.txt");
         try {
             enkripsi.enkripsi(file, processedfile);
             jTextArea2.read(new FileReader(processedfile.getAbsolutePath()),null);
@@ -233,7 +233,7 @@ public class tampilan extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         File file = fileChooser.getSelectedFile();
-        File processedfile = new File ("C:\\Users\\Public\\Documents\\Dekripsi.txt");
+        File processedfile = new File ("C:\\Users\\Public\\Documents\\ciphertext.txt");
         try {
             dekripsi.dekripsi(file, processedfile);
             jTextArea1.read(new FileReader(processedfile.getAbsolutePath()),null);
